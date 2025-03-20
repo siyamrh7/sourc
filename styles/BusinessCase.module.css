@@ -1,0 +1,188 @@
+/* BusinessCase.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+  }
+  
+  .caseCard {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+    margin-bottom: 2rem;
+    border: 1px solid rgba(184, 184, 184, 1)
+  }
+  
+  .headerSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+  
+  .savingsTag {
+    background-color: rgba(211, 255, 236, 0.8);
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+  }
+  
+  .savingsTag p {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .leftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .rightSection {
+    flex: 1;
+  }
+  
+  .sectionItem {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .iconContainer {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f5f7fd;
+  }
+  
+  .diamondIcon {
+    color: #6366f1;
+    font-size: 1.2rem;
+  }
+  
+  .chartIcon {
+    color: #6366f1;
+    font-size: 1.2rem;
+  }
+  
+  .starIcon {
+    color: #6366f1;
+    font-size: 1.2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    color: #222;
+  }
+  
+  .sectionText {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+  
+  .mealImage {
+    object-fit: cover;
+    border-radius: 0.75rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 968px) {
+    .contentContainer {
+      flex-direction: column-reverse;
+    }
+    
+    .rightSection {
+      margin-bottom: 2rem;
+    }
+    
+    .imageContainer {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+    
+    .headerSection {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .savingsTag {
+      align-self: flex-start;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .title {
+      font-size: 1.75rem;
+    }
+    
+    .caseCard {
+      padding: 1rem;
+    }
+    
+    .sectionItem {
+      flex-direction: column;
+    }
+    
+    .iconContainer {
+      margin-bottom: 0.5rem;
+    }
+    
+    .imageContainer {
+      height: 300px;
+    }
+  }

@@ -1,0 +1,137 @@
+/* UniqueFeatures.module.css */
+.uniqueSection {
+    padding: 5rem 0;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #1A1A1A;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .featureCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .featureImage {
+    transition: transform 0.5s ease;
+  }
+  
+  .featureCard:hover .featureImage {
+    transform: scale(1.05);
+  }
+  
+  .featureTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.25rem 0 0.75rem;
+    color: #1A1A1A;
+  }
+  
+  .featureDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .ctaContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .ctaButton {
+    background-color: #74EDD4;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .ctaButton:hover {
+    background-color: #5ed6bd;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .featuresGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .featureTitle {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .uniqueSection {
+      padding: 3rem 0;
+    }
+    
+    .featuresGrid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    
+    .imageContainer {
+      height: 220px;
+    }
+    
+    .heading {
+      font-size: 1.75rem;
+    }
+    
+    .ctaButton {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
