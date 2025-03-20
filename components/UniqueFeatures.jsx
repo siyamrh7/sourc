@@ -51,6 +51,7 @@ const UniqueFeatures = () => {
                   layout="fill"
                   objectFit="cover"
                   className={styles.featureImage}
+                  quality={100}
                 />
               </div>
               <h3 className={styles.featureTitle}>{feature.title}</h3>

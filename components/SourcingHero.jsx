@@ -5,14 +5,14 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const SourcingHero = () => {
-  const [imageSrc, setImageSrc] = useState("/images/content.webp");
+  const [imageSrc, setImageSrc] = useState("/images/Content.webp");
   const router= useRouter()
   const startButton=() => {
     router.push("#contact")
   }
   useEffect(() => {
     const handleResize = () => {
-      setImageSrc(window.innerWidth <= 1024 ? "/images/content2.webp" : "/images/content.webp");
+      setImageSrc(window.innerWidth <= 1024 ? "/images/Content2.webp" : "/images/Content.webp");
     };
 
     // Initial check
