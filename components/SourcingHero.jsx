@@ -53,8 +53,8 @@ const SourcingHero = () => {
               src={imageSrc} 
               alt="Shipping containers on a cargo ship" 
               layout="responsive"
-              height={600}
-              width={600}
+              height={100}
+              width={100}
               objectFit="contain"
               className={styles.shippingImage}
               priority

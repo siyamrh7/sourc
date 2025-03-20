@@ -12,25 +12,25 @@ const UniqueFeatures = () => {
   const features = [
     {
       id: 1,
-      image: '/images/image-1.webp',
+      image: '/images/md1.png',
       title: 'Directe toegang tot de bron',
       description: 'Wij kopen direct bij de bron, elimineren tussenhandelaren en verlagen de prijzen.'
     },
     {
       id: 2,
-      image: '/images/tower.webp',
+      image: '/images/md2.png',
       title: 'Lokale expertise met Chinese teamleden',
       description: 'Ons lokale team in China zorgt voor vlotte communicatie en onderhandelingen.'
     },
     {
       id: 3,
-      image: '/images/image-2.webp',
+      image: '/images/md3.png',
       title: 'Kwaliteitscontrole op locatie',
       description: 'Regelmatige fabriekbezoeken stellen ons in staat om de productie te inspecteren en topkwaliteit te garanderen.'
     },
     {
       id: 4,
-      image: '/images/image-3.webp',
+      image: '/images/md4.png',
       title: 'Efficiënte en veilige logistiek',
       description: 'Ons sterke logistieke netwerk zorgt voor tijdige en veilige levering, terwijl onverwachte kosten of vertragingen worden voorkomen.'
     }
@@ -51,7 +51,7 @@ const UniqueFeatures = () => {
                   layout="fill"
                   objectFit="cover"
                   className={styles.featureImage}
-                  quality={100}
+                  
                 />
               </div>
               <h3 className={styles.featureTitle}>{feature.title}</h3>
