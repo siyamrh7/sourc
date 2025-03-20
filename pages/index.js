@@ -1,4 +1,5 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 import SourcingHero from "@/components/SourcingHero";
 import LogisticsFeatures from "@/components/LogisticsFeatures";
