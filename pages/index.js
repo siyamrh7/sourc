@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+
 import SourcingHero from "@/components/SourcingHero";
 import LogisticsFeatures from "@/components/LogisticsFeatures";
-import UniqueFeatures from "@/components/UniqueFeatures";
+const UniqueFeatures = dynamic(() => import("@/components/UniqueFeatures"));
 import BusinessCase from "@/components/BusinessCase";
 import SourcingProcess from "@/components/SourcingProcess";
 import Testimonial from "@/components/Testimonial";
@@ -13,15 +11,7 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
