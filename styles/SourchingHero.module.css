@@ -143,9 +143,10 @@
     font-size: 0.9rem;
     font-weight: 500;
   }
-  
+ 
   /* Media Queries */
   @media (max-width: 1024px) {
+   
     .contentWrapper {
       flex-direction: column;
     height: 750px;
