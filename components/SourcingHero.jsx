@@ -5,14 +5,14 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const SourcingHero = () => {
-  const [imageSrc, setImageSrc] = useState(true);
+  const [imageSrc, setImageSrc] = useState("/images/content.webp");
   const router= useRouter()
   const startButton=() => {
     router.push("#contact")
   }
   useEffect(() => {
     const handleResize = () => {
-      setImageSrc(window.innerWidth <= 1024 ? false : true);
+      setImageSrc(window.innerWidth <= 1024 ? "/images/content2.webp" : "/images/content.webp");
     };
 
     // Initial check
@@ -49,44 +49,28 @@ const SourcingHero = () => {
        
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
-          <Image 
-                  src={"/images/content.webp"} 
-                  alt="Shipping containers on a cargo ship" 
-                  layout="fill"
-                  objectFit="contain"
-                  className={styles.shippingImage}
-                  priority
-                  quality={100}
-    
-                />
-            {/* {
-              imageSrc ? (
-
-                <Image 
-                  src={"/images/content.webp"} 
-                  alt="Shipping containers on a cargo ship" 
-                  layout="fill"
-                  objectFit="contain"
-                  className={styles.shippingImage}
-                  priority
-                  quality={100}
-    
-                />
-              ) : (
-
-                <Image 
-                 src="/images/content2.webp" 
-                 alt="Shipping containers on a cargo ship" 
-                 layout="fill"
-                 objectFit="contain"
-                 className={styles.shippingImage}
-                 priority
-                 quality={100}
-           
-               />
-              )
-
-            } */}
+            <Image 
+              src={imageSrc} 
+              alt="Shipping containers on a cargo ship" 
+              layout="responsive"
+              height={600}
+              width={600}
+              objectFit="contain"
+              className={styles.shippingImage}
+              priority
+              quality={100}
+              
+            />
+             {/* <Image 
+              src="/images/content2.webp" 
+              alt="Shipping containers on a cargo ship" 
+              layout="fill"
+              objectFit="contain"
+              className={styles.shippingImage}
+              priority
+              quality={100}
+        
+            /> */}
             {/* <div className={styles.featuresContainer}>
               <div className={styles.feature}>
                 <span className={styles.featureIcon}>🏆</span>
