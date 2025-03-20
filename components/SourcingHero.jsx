@@ -49,7 +49,17 @@ const SourcingHero = () => {
        
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
-            {
+          <Image 
+                  src={"/images/content.webp"} 
+                  alt="Shipping containers on a cargo ship" 
+                  layout="fill"
+                  objectFit="contain"
+                  className={styles.shippingImage}
+                  priority
+                  quality={100}
+    
+                />
+            {/* {
               imageSrc ? (
 
                 <Image 
@@ -76,7 +86,7 @@ const SourcingHero = () => {
                />
               )
 
-            }
+            } */}
             {/* <div className={styles.featuresContainer}>
               <div className={styles.feature}>
                 <span className={styles.featureIcon}>🏆</span>
