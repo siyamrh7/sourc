@@ -6,20 +6,22 @@ import Image from 'next/image';
 const ContainerFeatures = () => {
   return (
     <div className={styles.imageContainer}>
-      <img 
-        src="/images/container.png" 
+      <Image 
+        height={600}
+        width={600}
+        src="/images/container.webp" 
         alt="Container ship with shipping containers" 
         className={styles.image}
       />
 
       <div className={styles.featuresOverlay} >
       <div className={`${styles.featureItem} ${styles.topFirstFeature}`}>
-          <img src="/icons/award.png" alt="Quality icon" className={styles.featureIcon} />
+          <Image height={30} width={30} src="/icons/award.png" alt="Quality icon" className={styles.featureIcon} />
           <span className={styles.featureText}>Kwaliteitsgarantie waarop je kunt vertrouwen</span>
         </div>
         
         <div className={`${styles.featureItem} ${styles.topSecondFeature}`}>
-          <img src="/icons/image.png" alt="China flag" className={styles.featureIcon} />
+          <Image height={30} width={30} src="/icons/image.png" alt="China flag" className={styles.featureIcon} />
           <span className={styles.featureText}>Lokale experts in China voor naadloze sourcing</span>
         </div>
         
@@ -30,12 +32,12 @@ const ContainerFeatures = () => {
         */}
         
         <div className={`${styles.featureItem} ${styles.bottomFirstFeature}`}>
-          <img src="/icons/rocket.png" alt="Rocket icon" className={styles.featureIcon} />
+          <Image height={30} width={30} src="/icons/rocket.png" alt="Rocket icon" className={styles.featureIcon} />
           <span className={styles.featureText}>Sneller, slimmer en risicoloos importeren</span>
         </div>
         
         <div className={`${styles.featureItem} ${styles.bottomSecondFeature}`}>
-          <img src="/icons/switch.png" alt="Sync icon" className={styles.featureIcon} />
+          <Image height={30} width={30} src="/icons/switch.png" alt="Sync icon" className={styles.featureIcon} />
           <span className={styles.featureText}>End-to-end sourcing, vereenvoudigd</span>
         </div>
       </div>
