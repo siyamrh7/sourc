@@ -104,12 +104,14 @@
     
     .imageContainer {
       height: 450px;
+      
     }
   }
   
   @media (max-width: 768px) {
     .content {
-      flex-direction: column-reverse;
+      flex-direction: column;
+      
     }
     
     .featuresList {
@@ -132,17 +134,19 @@
     }
     
     .heading {
-      margin-bottom: 2rem;
+      margin-bottom: 0rem;
     }
     
     .title {
       font-size: 1.75rem;
+      text-align: left;
     }
     
     .subtitle {
       font-size: 1rem;
+      text-align: left;
     }
-    
+   
     .featureItem {
       gap: 0.75rem;
     }

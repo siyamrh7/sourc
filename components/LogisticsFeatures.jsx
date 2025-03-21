@@ -63,8 +63,7 @@ const LogisticsFeatures = () => {
               <div className={styles.featureText}>
                 <h3 className={styles.featureTitle}>End-to-end supply chain beheer</h3>
                 <p className={styles.featureDescription}>
-                  Wij regelen alles, van product sourcing tot transport en douaneafhandeling.
-                </p>
+                End-to-end supply chain beheer.                </p>
               </div>
             </div>
           </div>

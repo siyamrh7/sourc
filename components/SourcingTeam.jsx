@@ -30,7 +30,7 @@ const SourcingTeam = () => {
       id: 4,
       name: 'Kathy',
       position: 'Sourcing agent',
-      image: '/images/team/woman.webp', 
+      image: '/images/team/woman.webp',
       backgroundColor: '#4A4A4A'
     },
     {
@@ -50,28 +50,44 @@ const SourcingTeam = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: '#f8f9fa' ,width: '100%' }} id='team'>
+    <div style={{ backgroundColor: '#f8f9fa', width: '100%' }} id='team'>
+      {/* <p style={{
+        fontSize: '20vw', fontWeight: 'bold', background: "linear-gradient(180deg, #EDEDED 20.52%, #F9FAFB 91.94%)"
+        , color: 'white', opacity: '0.7'
+      }}>
+        更大的利润
+      </p> */}
+      <div className={styles.container}>
+        <h1 className={styles.title}>Jouw betrouwbare sourcing specialisten</h1>
+        <p className={styles.subtitle}>
+          Maak kennis met de specialisten die sourcing in China moeiteloos maken – met diepgaande
+          branchekennis, lokale expertise en sterke relaties met leveranciers om de beste resultaten te leveren.
+        </p>
 
-    <div className={styles.container}>
-      <h1 className={styles.title}>Jouw betrouwbare sourcing specialisten</h1>
-      <p className={styles.subtitle}>
-        Maak kennis met de specialisten die sourcing in China moeiteloos maken – met diepgaande
-        branchekennis, lokale expertise en sterke relaties met leveranciers om de beste resultaten te leveren.
-      </p>
-
-      <div className={styles.teamGrid}>
-           {teamMembers.map((member) => (
-          <div key={member.id} className={styles.teamCard} style={{ backgroundColor: member.backgroundColor }}>
-            <div className={styles.memberImage}>
-              <Image src={member.image} height={500} width={300} alt={member.name}  layout='responsive' quality={100}/>
+        <div className={styles.teamGrid}>
+          {teamMembers.map((member) => (
+            <div key={member.id} className={styles.teamCard} style={{ backgroundColor: member.backgroundColor }}>
+              <div className={styles.memberImage}>
+                <Image src={member.image} height={500} width={300} alt={member.name}  quality={100} />
+              </div>
+              <div className={styles.memberInfo}>
+                <h3>{member.name}</h3>
+                <p>{member.position}</p>
+              </div>
             </div>
-            <div className={styles.memberInfo}>
-              <h3>{member.name}</h3>
-              <p>{member.position}</p>
+          ))}
+             {/* {teamMembers.slice(3, 6).map((member) => (
+            <div key={member.id} className={styles.teamCard} style={{ backgroundColor: member.backgroundColor }}>
+              <div className={styles.memberImage}>
+                <Image src={member.image} height={500} width={300} alt={member.name}  quality={100} />
+              </div>
+              <div className={styles.memberInfo}>
+                <h3>{member.name}</h3>
+                <p>{member.position}</p>
+              </div>
             </div>
-          </div>
-        ))}
-        {/* {teamMembers.map((member) => (
+          ))} */}
+          {/* {teamMembers.map((member) => (
           <div key={member.id} className={styles.teamCard} style={{ backgroundColor: member.backgroundColor }}>
             <div className={styles.memberImage}>
               <img src={member.image} alt={member.name} />
@@ -82,8 +98,10 @@ const SourcingTeam = () => {
             </div>
           </div>
         ))} */}
+        </div>
       </div>
-    </div>
+ 
+
     </div>
   );
 };

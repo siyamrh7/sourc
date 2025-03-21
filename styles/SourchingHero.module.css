@@ -149,14 +149,14 @@
    
     .contentWrapper {
       flex-direction: column;
-    height: 750px;
+    height: auto;
     justify-content: flex-start;
       
     }
     
     .textContent {
       padding-right: 0;
-      margin-bottom: 0rem;
+      margin-bottom: 2rem;
     }
     
     .imageContainer {

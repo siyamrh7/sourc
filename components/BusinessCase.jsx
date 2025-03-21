@@ -11,7 +11,15 @@ const BusinessCase = () => {
       <div className={styles.caseCard}>
         <div className={styles.headerSection}>
           <div className={styles.logoContainer}>
-            <h2 className={styles.logo} style={{ color: '#000000',fontStyle: 'italic' }}>FIT PREPS</h2>
+            {/* <h2 className={styles.logo} style={{ color: '#000000',fontStyle: 'italic' }}>FIT PREPS</h2> */}
+            <Image 
+              src="/images/Group.webp" 
+              alt="Fit Preps Logo" 
+              width={112} 
+              height={15} 
+              className={styles.logo}
+              quality={100}
+            />
           </div>
           <div className={styles.savingsTag}>
             <p>Besparing per jaar - €152.000</p>

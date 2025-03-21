@@ -178,7 +178,7 @@ const ContactForm = () => {
               type="text"
               id="firstName"
               name="firstName"
-              placeholder="First name"
+              placeholder="Voornaam"
               value={formData.firstName}
               onChange={handleChange}
               required
@@ -191,7 +191,7 @@ const ContactForm = () => {
               type="text"
               id="lastName"
               name="lastName"
-              placeholder="Last name"
+              placeholder="Achternaam"
               value={formData.lastName}
               onChange={handleChange}
               required

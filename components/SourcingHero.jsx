@@ -12,7 +12,7 @@ const SourcingHero = () => {
   }
   useEffect(() => {
     const handleResize = () => {
-      setImageSrc(window.innerWidth <= 1024 ? "/images/Content2.webp" : "/images/Content.webp");
+      setImageSrc(window.innerWidth <= 1024 ? "/images/Content3.webp" : "/images/Content.webp");
     };
 
     // Initial check
@@ -33,7 +33,7 @@ const SourcingHero = () => {
           <h1 className={styles.mainHeading}>
           Jouw shortcut naar -   
             <span className={styles.subHeading}>kostenbesparing &</span>
-            <span className={styles.subHeading}>betrouwbare, leveranciers</span>
+            <span className={styles.subHeading}>betrouwbare leveranciers</span>
           </h1>
           
           <p className={styles.description}>

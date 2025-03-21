@@ -133,7 +133,7 @@
   /* Responsive styles */
   @media (max-width: 968px) {
     .contentContainer {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     
     .rightSection {
