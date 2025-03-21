@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/SourchingHero.module.css';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import ContainerFeatures from './ContainerImage';
+
+
+
 
 const SourcingHero = () => {
   const [imageSrc, setImageSrc] = useState("/images/Content.webp");
@@ -49,7 +53,7 @@ const SourcingHero = () => {
        
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
-            <Image 
+            {/* <Image 
               src={imageSrc} 
               alt="Shipping containers on a cargo ship" 
               layout="responsive"
@@ -60,7 +64,7 @@ const SourcingHero = () => {
               priority
               quality={100}
               
-            />
+            /> */}
              {/* <Image 
               src="/images/content2.webp" 
               alt="Shipping containers on a cargo ship" 
@@ -71,27 +75,7 @@ const SourcingHero = () => {
               quality={100}
         
             /> */}
-            {/* <div className={styles.featuresContainer}>
-              <div className={styles.feature}>
-                <span className={styles.featureIcon}>🏆</span>
-                <span className={styles.featureText}>Kwaliteitsgarantie waarop je kunt vertrouwen</span>
-              </div>
-              
-              <div className={`${styles.feature} ${styles.chinaFeature}`}>
-                <span className={styles.featureIcon}>🇨🇳</span>
-                <span className={styles.featureText}>Lokale experts in China voor naadloze sourcing.</span>
-              </div>
-              
-              <div className={styles.feature}>
-                <span className={styles.featureIcon}>🚀</span>
-                <span className={styles.featureText}>Sneller, slimmer en risicolos importeren</span>
-              </div>
-              
-              <div className={`${styles.feature} ${styles.endToEndFeature}`}>
-                <span className={styles.featureIcon}>➡️</span>
-                <span className={styles.featureText}>End-to-end sourcing, vereenvoudigd</span>
-              </div>
-            </div> */}
+          <ContainerFeatures/>
           </div>
         </div>
       </div>

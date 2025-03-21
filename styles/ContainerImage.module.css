@@ -1,0 +1,139 @@
+/* ContainerFeatures.module.css */
+.imageContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+   
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 12px;
+  }
+  
+  .featuresOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+   
+    padding: 40px 0;
+  }
+  
+  .featureItem {
+    position: absolute;
+    display: flex;
+    
+    align-items: center;
+    background: linear-gradient(85.14deg, rgba(0, 0, 0, 0.2) -24.79%, rgba(0, 0, 0, 0.2) 115.16%);
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 10px 15px;
+    color: white;
+    backdrop-filter: blur(30.96527862548828px);
+  
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.6px solid rgba(141, 141, 141, 1);
+    z-index: 10;
+  }
+
+  .featureIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    object-fit: contain;
+  }
+  
+  .featureText {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .arrowContainer {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+  }
+  
+  .arrowIcon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+  }
+  
+  /* The top two features are positioned at the top */
+  .featureItem:nth-child(1),
+  .featureItem:nth-child(2) {
+    margin-bottom: 12px;
+  }
+  
+  /* The bottom two features are positioned at the bottom */
+  .featureItem:nth-child(4),
+  .featureItem:nth-child(5) {
+    margin-top: 12px;
+  }
+  @media screen and (min-width: 1024px) {
+    .topFirstFeature {
+      bottom: 70px;
+      left: -60px;
+    }
+    
+    .topSecondFeature {
+      bottom: 10px;
+      left:-40px;
+    }
+    
+    .bottomFirstFeature {
+      bottom: 70px;
+      right: -60px;
+    }
+    
+    .bottomSecondFeature {
+      bottom: 10px;
+      right: -70px;
+    }
+    .featureText{
+      font-size: 14px;
+      
+    }
+    .featureItem{
+      width: auto;
+    }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .topFirstFeature {
+      top: 10px;
+      left: 10px;
+    }
+    
+    .topSecondFeature {
+      top: 60px;
+      left: 10px;
+    }
+    
+    .bottomFirstFeature {
+      bottom: 60px;
+      right: 10px;
+    }
+    
+    .bottomSecondFeature {
+      bottom: 10px;
+      right: 10px;
+    }
+    .featureText{
+      font-size: 10px;
+    }
+    .featureItem{
+      padding:5px 7.15px;
+    }
+  }
