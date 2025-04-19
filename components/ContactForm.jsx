@@ -103,7 +103,8 @@ const ContactForm = () => {
     firstName: '',
     lastName: '',
     email: '',
-    message: ''
+    message: '',
+    phone:''
   });
   
   const [status, setStatus] = useState({
@@ -142,7 +143,8 @@ const ContactForm = () => {
           firstName: '',
           lastName: '',
           email: '',
-          message: ''
+          message: '',
+          phone: ''
         });
       } else {
         throw new Error(data.message || 'Er is iets misgegaan. Probeer het later opnieuw.');
@@ -155,8 +157,8 @@ const ContactForm = () => {
   return (
     <div className={styles.contactContainer} id='contact'>
       <p className={styles.contactLabel}>Contact ons</p>
-      <h1 className={styles.contactTitle}>Bespreek je mogelijkheden met ons</h1>
-      <p className={styles.contactSubtitle}>We horen graag van je. Vul alsjeblieft dit formulier in.</p>
+      <h1 className={styles.contactTitle}>Bespreek je mogelijkheden met ons dmv een vrijblijvend advies gesprek </h1>
+      <p className={styles.contactSubtitle}>Zo creëren wij vooraf een opmaat gemaakt plan van aanpak. Weet jij ook gelijk waar jij aan toe bent, we horen graag van je.</p>
       
       {status.success && (
         <div className={styles.successMessage}>
@@ -198,7 +200,19 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        
+         
+        <div className={styles.formGroup}>
+          <label htmlFor="phone">Phone</label>
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            placeholder="+31612345678"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>
           <input

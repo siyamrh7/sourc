@@ -8,10 +8,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
-  const { firstName, lastName, email, message } = req.body;
+  const { firstName, lastName,phone, email, message } = req.body;
 
   // Basic validation
-  if (!firstName || !lastName || !email || !message) {
+  if (!firstName || !lastName || !email || !message || !phone) {
     return res.status(400).json({ message: 'Alle velden zijn verplicht' });
   }
 
@@ -24,6 +24,7 @@ export default async function handler(req, res) {
         content: `
           <h3>New Contact Form Submission</h3>
           <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Message:</strong></p>
           <p>${message.replace(/\n/g, '<br>')}</p>
