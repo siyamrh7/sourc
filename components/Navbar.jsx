@@ -63,8 +63,11 @@ const Navbar = () => {
             </Link>
           </div>
           
-          <Link href="#contact" className={styles.ctaButton} onClick={closeMenu}>
+          <Link href="#contact" style={{backgroundColor: 'transparent', border: '1px solid #000'}} className={styles.ctaButton} onClick={closeMenu}>
             START MET SOURCEN
+          </Link>
+          <Link style={{border: '1px solid #000'}} href="https://admin.sourc.nl/" target='_blank' className={styles.ctaButton} onClick={closeMenu}>
+            DASHBOARD
           </Link>
         </nav>
       </div>
