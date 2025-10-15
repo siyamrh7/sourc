@@ -8,43 +8,43 @@ const SourcingTeam = () => {
     {
       id: 1,
       name: 'Boy Hardenberg',
-      position: 'Eigenaar - Finance / Sales',
-      image: '/images/team/boy.webp',
+      position: 'Finance',
+      image: '/images/team/boy.jpeg',
       backgroundColor: '#F7BA0A'
     },
     {
       id: 2,
       name: 'Abdellah Dira',
-      position: 'Eigenaar - Finance / Sales',
-      image: '/images/team/men.webp',
+      position: 'Sales',
+      image: '/images/team/appie.jpeg',
       backgroundColor: '#8B4D39'
     },
     {
       id: 3,
       name: 'Ray Drisdale',
-      position: 'Eigenaar - Sourcing / Product ontwikkelaar',
-      image: '/images/team/ray.webp',
+      position: 'Sourcing / Product ontwikkelaar',
+      image: '/images/team/ray.jpeg',
       backgroundColor: '#F7BA0A'
     },
     {
       id: 4,
-      name: 'Kathy',
-      position: 'Sourcing agent',
-      image: '/images/team/woman.webp',
+      name: 'Ferdi Caglayan',
+      position: 'Sales',
+      image: '/images/team/ferdi.jpeg',
       backgroundColor: '#4A4A4A'
     },
     {
       id: 5,
-      name: 'Jacky',
-      position: 'Product ontwikkelaar',
-      image: '/images/team/boss.webp',
+      name: 'Yousef Malah',
+      position: 'Sales',
+      image: '/images/team/yousef.jpeg',
       backgroundColor: '#C5D6E5'
     },
     {
       id: 6,
-      name: 'Jessy',
-      position: 'Logistiek',
-      image: '/images/team/beautiful.webp',
+      name: 'Siyam Rahman',
+      position: 'IT Manager',
+      image: '/images/team/siyam.png',
       backgroundColor: '#4A4A4A'
     }
   ];
