@@ -46,6 +46,20 @@ const SourcingTeam = () => {
       position: 'IT Manager',
       image: '/images/team/siyam.png',
       backgroundColor: '#4A4A4A'
+    },
+    {
+      id: 7,
+      name: 'Jacky',
+      position: 'Product ontwikkelaar',
+      image: '/images/team/boss.webp',
+      backgroundColor: '#4A4A4A'
+    },
+    {
+      id: 8,
+      name: 'Jessy',
+      position: 'Logistiek',
+      image: '/images/team/beautiful.webp',
+      backgroundColor: '#8B4D39'
     }
   ];
 
