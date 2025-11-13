@@ -12,13 +12,13 @@ const SourcingTeam = () => {
       image: '/images/team/boy.jpeg',
       backgroundColor: '#F7BA0A'
     },
-    {
-      id: 2,
-      name: 'Abdellah Dira',
-      position: 'Sales',
-      image: '/images/team/appie.jpeg',
-      backgroundColor: '#8B4D39'
-    },
+    // {
+    //   id: 2,
+    //   name: 'Abdellah Dira',
+    //   position: 'Sales',
+    //   image: '/images/team/appie.jpeg',
+    //   backgroundColor: '#8B4D39'
+    // },
     {
       id: 3,
       name: 'Ray Drisdale',
@@ -33,13 +33,13 @@ const SourcingTeam = () => {
       image: '/images/team/ferdi.jpeg',
       backgroundColor: '#4A4A4A'
     },
-    {
-      id: 5,
-      name: 'Yousef Malah',
-      position: 'Sales',
-      image: '/images/team/yousef.jpeg',
-      backgroundColor: '#C5D6E5'
-    },
+    // {
+    //   id: 5,
+    //   name: 'Yousef Malah',
+    //   position: 'Sales',
+    //   image: '/images/team/yousef.jpeg',
+    //   backgroundColor: '#C5D6E5'
+    // },
     {
       id: 6,
       name: 'Siyam Rahman',
