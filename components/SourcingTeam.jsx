@@ -33,13 +33,13 @@ const SourcingTeam = () => {
       image: '/images/team/ferdi.jpeg',
       backgroundColor: '#4A4A4A'
     },
-    // {
-    //   id: 5,
-    //   name: 'Yousef Malah',
-    //   position: 'Sales',
-    //   image: '/images/team/yousef.jpeg',
-    //   backgroundColor: '#C5D6E5'
-    // },
+    {
+      id: 5,
+      name: 'Yousef Malah',
+      position: 'Sales',
+      image: '/images/team/yousef.jpeg',
+      backgroundColor: '#C5D6E5'
+    },
     {
       id: 6,
       name: 'Siyam Rahman',
