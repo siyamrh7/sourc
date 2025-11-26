@@ -157,7 +157,7 @@ const ContactForm = () => {
   return (
     <div className={styles.contactContainer} id='contact'>
       <p className={styles.contactLabel}>Contact ons</p>
-      <h1 className={styles.contactTitle}>Bespreek je mogelijkheden met ons dmv een vrijblijvend advies gesprek </h1>
+      <h1 className={styles.contactTitle}>Bespreek je mogelijkheden met ons dmv een vrijblijvend adviesgesprek </h1>
       <p className={styles.contactSubtitle}>Zo creëren wij vooraf een opmaat gemaakt plan van aanpak. Weet jij ook gelijk waar jij aan toe bent, we horen graag van je.</p>
       
       {status.success && (
