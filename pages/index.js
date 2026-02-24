@@ -30,7 +30,7 @@ export default function Home() {
       <BusinessCase/>
       <Testimonial/>
       <SourcingProcess/>
-      <SourcingTeam/>
+      {/* <SourcingTeam/> */}
       <ContactForm/>
       <Footer/>
     </>
